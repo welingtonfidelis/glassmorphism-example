@@ -92,9 +92,12 @@ body {
   height: 80px;
   border-radius: 10px;
   outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(9px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
   padding-left: 30px;
 }
 
@@ -118,7 +121,8 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 16px;
-  border: 1px solid rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
   color: #fff;
   position: absolute;
   top: 12px;
@@ -128,12 +132,15 @@ body {
 .info-card .card {
   width: 500px;
   height: 300px;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(9px);
-  border-radius: 20px;
   position: relative;
   padding: 40px 50px;
   box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .info-card .card::before {
@@ -174,50 +181,50 @@ body {
 }
 
 .card-chip {
-    margin-bottom: 45px;
+  margin-bottom: 45px;
 }
 
 .card-chip img {
-    width: 60px;
-    height: 43px;
+  width: 60px;
+  height: 43px;
 }
 
 .card-footer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-footer div:nth-child(2) {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .card-footer .card-footer-info p {
-    font-family: Lato, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    color: #fff;
-    margin: 0;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #fff;
+  margin: 0;
 }
 
 .card-footer .card-footer-info p:first-child {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .footer-text {
-    font-family: Lato, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 16px;
-    line-height: 18px;
+  font-family: Lato, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .footer-text--big {
-    letter-spacing: 0.07em;
-    font-size: 20px;
-    line-height: 30px;
+  letter-spacing: 0.07em;
+  font-size: 20px;
+  line-height: 30px;
 }

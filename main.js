@@ -1,4 +1,4 @@
-(function perspectiveHover() {
+(perspectiveHover = () => {
   const intensity = 12;
   const cardElement = document.querySelector(".card");
 
