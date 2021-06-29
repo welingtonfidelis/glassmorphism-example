@@ -38,7 +38,7 @@ body {
 
 #img-right {
   width: 550px;
-  height: 610px;
+  height: 550px;
   position: absolute;
   right: 0;
   top: 30px;
@@ -50,7 +50,7 @@ body {
   z-index: 9;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 25px;
 }
 
 .info-title {
@@ -143,30 +143,34 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.info-card .card:hover {
+  cursor: pointer;
+}
+
+.info-card .card .js-tilt-glare {
+  border-radius: 20px;
+}
+
 .info-card .card::before {
   content: "";
   height: 100%;
   width: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.5);
   border-right: none;
   position: absolute;
   bottom: 0;
   left: 0;
   box-sizing: border-box;
-  border-radius: 20px 0 0 20px;
 }
 
 .info-card .card::after {
   content: "";
   height: 100%;
   width: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.3);
   border-left: none;
   position: absolute;
   bottom: 0;
   right: 0;
   box-sizing: border-box;
-  border-radius: 0 20px 20px 0;
 }
 
 .card-title h2 {
